@@ -1,0 +1,7 @@
+{% if vote_question %}
+    <ul>
+        <label href="/polls/{{ question.id }}/vote/">{{ vote_question }}</label>
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
